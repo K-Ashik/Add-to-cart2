@@ -1,0 +1,118 @@
+*{
+    transition: all .5s;
+}
+a, a:focus, a:active,
+button,
+button:focus{
+    outline: none;
+    border: none;
+}
+button{
+    background-color: #c42aff;
+    color: #fff;
+    padding: 5px 15px;
+    margin-right: 5px;
+    border-radius: 2px;
+    font-weight: 700;
+}
+body{
+    background-color: #e1e1e1;
+}
+img{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.card h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.card h2 span{
+    color: blue;
+    font-size: 20px;
+}
+.main{
+    transition: .5s;
+}
+.fixe_cart{
+    width: 70px;
+    border-radius: 10px 0 0 10px;
+    height: 60px;
+    background-color: rgba(196,42,255,.5);
+    position: fixed;
+    top: 50%;
+    right: -18px;
+    transform: translateY(-50%);
+}
+
+.fixe_cart_show{
+    width: calc(25% - 15px);
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: -18px;
+    padding: 15px;
+}
+#all_cart{
+    overflow-y: scroll;
+    height: 100vh;
+    margin-right: -30px;
+}
+#all_cart .card{
+    margin-right: 30px;
+}
+button#click {
+    position: absolute;
+    top: 0;
+    border: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-weight: 700;
+    z-index: 999;
+    background: transparent;
+    color: transparent;
+    transition: ease-in .1s;
+}
+
+button.click{
+    right: 100% !important;
+    background-color: #000 !important;
+    color: #fff !important;
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 50% !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+}
+
+#product_total{
+    font-size: 30px;
+    color: #000;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.all_cart{
+    display: none;
+}
+
+.nav-tabs .nav-link {
+    border-radius: 3px;
+    margin-bottom: 30px;
+    background: #962bb0;
+    margin-right: 15px;
+    color: #fff;
+    font-weight: 700;
+    border: 0;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: #000;
+    color: #fff;
+    border-radius: 3px;
+    border: 0;
+}

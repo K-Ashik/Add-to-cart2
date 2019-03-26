@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-commerce System By Javascript</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" id="main">
+                <div class="main container-fluid py-5">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Man's Wear</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Women's Wear</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Watch</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <!-- man's Wear start -->
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row">
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/panjabi.png" class="img-fluid img-thumbnail" alt="">
+                                            <h2>Panjabi <span>(1800/-)</span></h2>
+                                            <button onclick="product_add('17')">Add</button>
+                                            <button id="r_17" class="d-none" onclick="product_remove('17')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/tshirt.jpg" class="img-fluid img-thumbnail" alt="">
+                                            <h2>T-shirt <span>(200/-)</span></h2>
+                                            <button onclick="product_add('0')">Add</button>
+                                            <button id="r_0" class="d-none" onclick="product_remove('0')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/pant.jpeg" class="img-fluid img-thumbnail" alt="">
+                                            <h2>Pant <span>(300/-)</span></h2>
+                                            <button onclick="product_add('1')">Add</button>
+                                            <button id="r_1" class="d-none" onclick="product_remove('1')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/lungi.jpg" class="img-fluid img-thumbnail" alt="">
+                                            <h2>Lungi <span>(450/-)</span></h2>
+                                            <button onclick="product_add('3')">Add</button>
+                                            <button id="r_3" class="d-none" onclick="product_remove('3')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/shirt.jpg" class="img-fluid img-thumbnail" alt="">
+                                            <h2>Shirt <span>(650/-)</span></h2>
+                                            <button onclick="product_add('4')">Add</button>
+                                            <button id="r_4" class="d-none" onclick="product_remove('4')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- man's wear end -->
+                        <!-- women's wear start -->
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="row">
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/women/shari.png" class="img-fluid img-thumbnail" alt="">
+                                            <h2>Shari <span>(1300/-)</span></h2>
+                                            <button onclick="product_add('2')">Add</button>
+                                            <button id="r_2" class="d-none" onclick="product_remove('2')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/women/hijab.jpg" class="img-fluid img-thumbnail" alt="">
+                                            <h2>Hijab <span>(1200/-)</span></h2>
+                                            <button onclick="product_add('13')">Add</button>
+                                            <button id="r_13" class="d-none" onclick="product_remove('13')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/women/orna.png" class="img-fluid img-thumbnail" alt="">
+                                            <h2>Orna <span>(180/-)</span></h2>
+                                            <button onclick="product_add('14')">Add</button>
+                                            <button id="r_14" class="d-none" onclick="product_remove('14')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/women/threepice.PNG" class="img-fluid img-thumbnail" alt="">
+                                            <h2>Three Piece <span>(780/-)</span></h2>
+                                            <button onclick="product_add('15')">Add</button>
+                                            <button id="r_15" class="d-none" onclick="product_remove('15')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/women/women-jacket.jpg" class="img-fluid img-thumbnail" alt="">
+                                            <h2>Women Jacket <span>(4780/-)</span></h2>
+                                            <button onclick="product_add('16')">Add</button>
+                                            <button id="r_16" class="d-none" onclick="product_remove('16')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- women's wear end -->
+                        <!-- watch start -->
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="row">
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/watch/01.jpg" class="img-fluid img-thumbnail" alt="">
+                                            <h2>Watch - 01 <span>(2000/-)</span></h2>
+                                            <button onclick="product_add('5')">Add</button>
+                                            <button id="r_5" class="d-none" onclick="product_remove('5')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/watch/02.jpg" class="img-fluid img-thumbnail" alt="">
+                                            <h2>Watch - 02 <span>(1500/-)</span></h2>
+                                            <button onclick="product_add('6')">Add</button>
+                                            <button id="r_6" class="d-none" onclick="product_remove('6')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/watch/03.jpg" class="img-fluid img-thumbnail" alt="">
+                                            <h2>Watch - 03 <span>(1700/-)</span></h2>
+                                            <button onclick="product_add('7')">Add</button>
+                                            <button id="r_7" class="d-none" onclick="product_remove('7')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/watch/04.jpg" class="img-fluid img-thumbnail" alt="">
+                                            <h2>Watch - 04 <span>(3400/-)</span></h2>
+                                            <button onclick="product_add('8')">Add</button>
+                                            <button id="r_8" class="d-none" onclick="product_remove('8')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/watch/05.png" class="img-fluid img-thumbnail" alt="">
+                                            <h2>Watch - 05 <span>(2750/-)</span></h2>
+                                            <button onclick="product_add('9')">Add</button>
+                                            <button id="r_9" class="d-none" onclick="product_remove('9')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/watch/06.jpg" class="img-fluid img-thumbnail" alt="">
+                                            <h2>Watch - 06 <span>(1690/-)</span></h2>
+                                            <button onclick="product_add('10')">Add</button>
+                                            <button id="r_10" class="d-none" onclick="product_remove('10')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/watch/07.png" class="img-fluid img-thumbnail" alt="">
+                                            <h2>Watch - 07 <span>(1290/-)</span></h2>
+                                            <button onclick="product_add('11')">Add</button>
+                                            <button id="r_11" class="d-none" onclick="product_remove('11')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4 col-lg-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <img src="images/watch/08.jpg" class="img-fluid img-thumbnail" alt="">
+                                            <h2>Watch - 08 <span>(5600/-)</span></h2>
+                                            <button onclick="product_add('12')">Add</button>
+                                            <button id="r_12" class="d-none" onclick="product_remove('12')">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- watch end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixe_cart" id="fixed_box">
+        <button onclick="makeChange()" id="click">+</button>
+        <p id="product_total">0</p>
+        <div id="all_cart" class="all_cart">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="text-center mb-0 font-weight-bold">No product added yet</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
